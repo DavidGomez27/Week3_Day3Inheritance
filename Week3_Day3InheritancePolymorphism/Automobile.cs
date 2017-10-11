@@ -19,8 +19,15 @@ namespace Week3_Day3InheritancePolymorphism
         }
         
         
-        public Automobile (int numberOfWheels, float wheelSize, int numberOfDoors)
+        public Automobile (int numberOfWheels, float wheelSize, int numberOfDoors, int seats, int carryingCapacity, string color, double movementSpeed)
         {
+            this.numberOfWheels = numberOfWheels;
+            this.wheelSize = wheelSize;
+            this.numberOfDoors = numberOfDoors;
+            this.seats = seats;
+            this.carryingCapacity = carryingCapacity;
+            this.color = color;
+            this.movementSpeed = movementSpeed;
 
         }
            
