@@ -15,7 +15,7 @@ namespace Week3_Day3InheritancePolymorphism
         protected double movementSpeed;
         private float gearRatio;
         private float engineSize;
-        private double distanceTraveled;
+        protected double distanceTraveled;
 
         public int Seats
         {
@@ -55,7 +55,7 @@ namespace Week3_Day3InheritancePolymorphism
           this.distanceTraveled = 0.0d;
          }
 
-        public void Move()
+        public virtual void Move()
         {
             distanceTraveled += movementSpeed;
         }

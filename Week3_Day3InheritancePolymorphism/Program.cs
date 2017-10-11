@@ -23,6 +23,12 @@ namespace Week3_Day3InheritancePolymorphism
             herbie.Move();
             Console.WriteLine("Automobile distance traveled: " + herbie.DistanceTraveled);
 
+
+            Boat boaty = new Boat(2, 500, "Black", 88.0d, .9d);
+            boaty.Move();
+            boaty.Move();
+            Console.WriteLine("Boat distance Traveled: " + boaty.DistanceTraveled);
+
            
 
 
