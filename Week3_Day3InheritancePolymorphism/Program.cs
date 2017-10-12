@@ -11,25 +11,29 @@ namespace Week3_Day3InheritancePolymorphism
         static void Main(string[] args)
         {
 
-            Vehicle baseVehicle = new Vehicle(4, 2000, "Red", 55.0d);
+            //Vehicle baseVehicle = new Vehicle(4, 2000, "Red", 55.0d);
 
-            baseVehicle.Move();
-            baseVehicle.Move();
-            Console.WriteLine(baseVehicle.DistanceTraveled);
+            //baseVehicle.Move();
+            //baseVehicle.Move();
+            //Console.WriteLine(baseVehicle.DistanceTraveled);
 
 
             Automobile herbie = new Automobile(4, 13, 2, 4, 1500, "White", 88.0d);
             herbie.Move();
             herbie.Move();
-            Console.WriteLine("Automobile distance traveled: " + herbie.DistanceTraveled);
+            Console.WriteLine("Automobile " + herbie.GetDistanceTraveled());
 
 
             Boat boaty = new Boat(2, 500, "Black", 88.0d, .9d);
             boaty.Move();
             boaty.Move();
-            Console.WriteLine("Boat distance Traveled: " + boaty.DistanceTraveled);
+            Console.WriteLine("Boat " + boaty.GetDistanceTraveled());
 
-           
+
+            Aircraft aircraft1 = new Aircraft(70, 100000, "Grey", 600d);
+            aircraft1.Move();
+            aircraft1.Move();
+            Console.WriteLine("Aicraft " + aircraft1.GetDistanceTraveled());
 
 
 
